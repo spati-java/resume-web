@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" ng-app="resumeApp">
+<head>
+ <script src="WebContent/resources/js/lib/angular-animate.min.js"></script>	
+  <script src="resources/js/lib/angular.min.js"></script>
+  <script src="resources/js/lib/angular-route.min.js"></script>
+  <script src="resources/js/controllers/app.js"></script>
+  <script src="resources/js/controllers/phonelist-controller.js"></script>
+   <script src="resources/js/controllers/greeting-controller.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#/greetings"><i>MyRzumeAp</i> </a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#/greetings">Home</a></li>
+        <li><a href="#/phones">Profile</a></li>
+        <li><a href="#/experience">Prof Experience</a></li> 
+        <li><a href="#/">Publication</a></li> 
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <div ng-view></div>
+
+</body>
+</html>

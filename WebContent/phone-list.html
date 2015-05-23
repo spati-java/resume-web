@@ -1,0 +1,39 @@
+<link rel="stylesheet" type="text/css" href="resources/css/animation.css">
+
+<body>
+
+ <script data-require="angular.js@*" data-semver="1.2.4" src="http://code.angularjs.org/1.2.4/angular.js"></script>
+    <script src="http://code.angularjs.org/1.2.4/angular-animate.min.js"></script>
+    <script src="script.js"></script>
+
+
+
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2">
+      <!--Sidebar content-->   
+    </div>
+    <div class="col-md-10">
+    
+     <input type="search" ng-model="phn" placeholder="filter names.." />
+      <ul class="example-animate-container" >
+      <li class="animate-repeat" ng-repeat="firstName in phones | filter:phn">
+          Greet: {{phones.greet}} 
+        </li>
+        <li class="animate-repeat" ng-repeat="firstName in phones | filter:phn">
+          First Name: {{phones.firstName}} 
+        </li>
+        <li class="animate-repeat" ng-repeat="firstName in phones | filter:phn">
+          Last Name: {{phones.lastName}} 
+        </li>
+       
+      </ul>
+       
+      
+
+    </div>
+  </div>
+</div>
+
+</body>
