@@ -16,16 +16,16 @@
     </div>
     <div class="col-md-10">
     
-     <input type="search" ng-model="phn" placeholder="filter names.." />
+     <input type="search" ng-model="prof" placeholder="filter names.." />
       <ul class="example-animate-container" >
-      <li class="animate-repeat" ng-repeat="firstName in phones | filter:phn">
-          Greet: {{phones.greet}} 
+      <li class="animate-repeat" ng-repeat="firstName in profile | filter:prof">
+          Greet: {{profile.greet}} 
         </li>
-        <li class="animate-repeat" ng-repeat="firstName in phones | filter:phn">
-          First Name: {{phones.firstName}} 
+        <li class="animate-repeat" ng-repeat="firstName in profile | filter:prof">
+          First Name: {{profile.firstName}} 
         </li>
-        <li class="animate-repeat" ng-repeat="firstName in phones | filter:phn">
-          Last Name: {{phones.lastName}} 
+        <li class="animate-repeat" ng-repeat="firstName in profile | filter:prof">
+          Last Name: {{profile.lastName}} 
         </li>
        
       </ul>
