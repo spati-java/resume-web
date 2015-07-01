@@ -1,18 +1,36 @@
-<!DOCTYPE html>
-<html>
-<head>
 
-<meta charset="ISO-8859-1">
-<title>Greeting</title>
-<link rel="stylesheet" type="text/css" href="resources/css/animation.css">
-<link rel="stylesheet" href="resources/node_modules/bootstrap/dist/css/bootstrap.min.css">
+<html lang="en">
+<head>
+  <script src="resources/js/animation.js"></script>
+  <meta charset="utf-8">
+  <title>Greeting Page</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <!-- <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script> -->
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+    .toggler { width: 500px; height: 200px; position: relative; }
+    #button { padding: .5em 1em; text-decoration: none; }
+    #effect { width: 240px; height: 135px; padding: 0.4em; position: relative; background: #fff; }
+    #effect h3 { margin: 0; padding: 0.4em; text-align: center; }
+  </style>
+  
 </head>
 <body>
-
-
-				<h1>Greetings!!</h1>
-        		<h2>{{greetings}}</h2>
-         
-   
+ 
+<div class="toggler">
+  <div id="effect" class="ui-widget-content ui-corner-all">
+    <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+    <p>
+    Greetings!!
+        		{{greetings}}
+     
+    </p>
+  </div>
+</div>
+ 
+<button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>
+ 
+ 
 </body>
 </html>

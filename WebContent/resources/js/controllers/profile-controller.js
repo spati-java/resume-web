@@ -8,5 +8,6 @@ profileControllers.controller('ProfileCtrl', ['$scope', '$http',
     });
 
     $scope.orderProp = 'age';
+    console.log("profile controller is succefull");
   }]);
 
