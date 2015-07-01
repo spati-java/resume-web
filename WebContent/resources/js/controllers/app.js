@@ -1,18 +1,18 @@
-var phonecatApp = angular.module('resumeApp', [
+var resumeApp = angular.module('resumeApp', [
   'ngRoute',
-  'phonecatControllers','greetingControllers'
+  'profileController','greetingControllers'
 ]);
 
-phonecatApp.config(['$routeProvider',
+resumeApp.config(['$routeProvider',
                     function($routeProvider) {
                       $routeProvider.
                          when('/greetings', {
                             templateUrl: 'greeting.html',
                             controller: 'GreetingCtrl'
                           }).
-                          when('/phones', {
-                              templateUrl: 'phone-list.html',
-                              controller: 'PhoneListCtrl'
+                          when('/profile', {
+                              templateUrl: 'profile.html',
+                              controller: 'ProfileCtrl'
                             }).
                         otherwise({
                           redirectTo: '/greetings'
