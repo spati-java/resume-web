@@ -1,0 +1,22 @@
+.nav {
+position: relative;
+background-color:#339900; 
+
+}
+ul {
+	list-style-type: none;
+    margin: 25px;
+    padding: 12px;
+    
+   
+}
+li {
+	display: inline;
+	
+	margin-left: 10px;  
+	
+}
+a {
+    color: white;
+    text-decoration: none;
+}
